@@ -1,0 +1,25 @@
+# Dependencies for the DNR Pre-Training Diagnostic notebook
+# (DNR_Diagnostic_PreTraining-2.ipynb)
+#
+# Pins below match the environment the notebook was authored against:
+#   - pandas must stay < 3.0  (pandas 3.0 made DataFrame.to_hdf args keyword-only)
+#   - numba 0.63.x requires numpy < 2.4
+
+numpy==2.3.5
+pandas==2.3.3
+numba==0.63.1
+scipy
+plotly
+tqdm
+openpyxl
+tables
+
+# Jupyter runtime used to run/execute the notebook
+jupyter
+nbconvert
+ipykernel
+
+# Optional: only needed for the loss-scale check / GraphTransformer cells.
+# These cells are guarded by try/except and are skipped if torch is absent.
+# torch
+# torch_geometric

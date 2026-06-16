@@ -1,0 +1,7 @@
+# Notebook diagnostic output (regenerated on every run)
+dnr_diagnostic.h5
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
